@@ -15,8 +15,8 @@ def bubble_sort(array):
     while n < len(array):
         movement = False
         for i in range(len(array)-n):
-            if array[i] > array[i+ 1 ]:
-                array[i],array[i+ 1] = array[i+ 1 ],array[i]
+            if array[i] < array[i+ 1]:
+                array[i],array[i+ 1] = array[i+ 1],array[i]
                 movement = True
         if not movement:
             return

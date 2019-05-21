@@ -9,7 +9,7 @@ import random
 
 START = 0
 END = 100
-SIZE = 15
+# SIZE = 15
 
 # def quickselect_median(l):
 #     if len(l) % 2 == 1:
@@ -44,6 +44,8 @@ def quickselect(l, k):
         return quickselect(highs, k - len(lows) - len(pivots))
 
 if __name__ == "__main__":
+    m = int(input('Input m '))
+    SIZE = 2 * m + 1
     array = [random.randint(START, END) for _ in range(SIZE)]
     print(array)
     print(f'median: {quickselect(array, SIZE // 2)}')

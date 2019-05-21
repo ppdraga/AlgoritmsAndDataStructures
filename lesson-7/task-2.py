@@ -3,8 +3,8 @@
 # отсортированный массивы.
 
 import random
-START = -100
-END = 100
+START = 0
+END = 50
 SIZE = 15
 
 
